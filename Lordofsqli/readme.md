@@ -378,3 +378,12 @@ Try the password in the url by setting it to the argument 'pw'
 like:  
 
 ?pw=\_\_2e_d\_\_
+
+
+## Succubus
+
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Succubus.png)
+
+Link: https://los.rubiya.kr/chall/succubus_37568a99f12e6bd2f097e8038f74d768.php?id=\&pw=%20or%201%23
+
+query : select id from prob_succubus where id='\' and pw=' or 1#'
