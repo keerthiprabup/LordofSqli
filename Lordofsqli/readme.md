@@ -377,4 +377,4 @@ Try the password in the url by setting it to the argument 'pw'
 
 like:  
 
-?pw=__2e_d__
+?pw=\_\_2e_d\_\_
