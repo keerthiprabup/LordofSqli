@@ -404,3 +404,7 @@ Link: https://los.rubiya.kr/chall/zombie_assassin_eac7521e07fe5f298301a44b61ffee
 query : select id from prob_nightmare where pw=('')=0') and id!='admin'
 
 https://los.rubiya.kr/chall/nightmare_be1285a95aa20e8fa154cb977c37fee5.php?pw=%27)=0%00
+
+## Xavis
+
+
