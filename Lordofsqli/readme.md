@@ -458,4 +458,10 @@ like:
 
 ## Dragon
 
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Dragon.png)
 
+query : select id from prob_dragon where id='guest'# and pw=' and 0 or id='admin'#'
+
+Newline character added at the beginning of the argument.
+
+https://los.rubiya.kr/chall/dragon_51996aa769df79afbf79eb4d66dbcef6.php?pw=%0A%20and%200%20%20or%20id=%27admin%27%23
